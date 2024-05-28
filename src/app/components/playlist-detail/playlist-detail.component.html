@@ -1,0 +1,10 @@
+<div *ngIf="playlist">
+    <h2>{{ playlist.nombre }}</h2>
+    <p>{{ playlist.descripcion }}</p>
+    <ul>
+      <li *ngFor="let song of playlist.canciones">
+        {{ song.titulo }} - {{ song.artista }}
+      </li>
+    </ul>
+  </div>
+  

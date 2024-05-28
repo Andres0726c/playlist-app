@@ -1,0 +1,12 @@
+<div>
+    <h2>Playlists</h2>
+    <ul>
+        @for (playlist of playlists; track $index) {
+      <li>
+        <a [routerLink]="['/playlists', playlist.nombre]">{{ playlist.nombre }}</a>
+      </li>
+        }
+    </ul>
+    <button routerLink="/new-playlist">Create New Playlist</button>
+  </div>
+  
